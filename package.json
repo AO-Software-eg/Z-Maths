@@ -1,0 +1,26 @@
+{
+    "name": "Z-Maths",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev:api": "pnpm --filter @zmaths/api dev",
+        "typecheck": "pnpm -r typecheck"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.9.1",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.9.1",
+    "type": "module",
+    "devDependencies": {
+        "typescript": "^7.0.2"
+    }
+}

@@ -6,6 +6,7 @@
     "main": "index.js",
     "scripts": {
         "dev:api": "pnpm --filter @zmaths/api dev",
+        "dev:web": "pnpm --filter @zmaths/web next dev",
         "typecheck": "pnpm -r typecheck"
     },
     "keywords": [],

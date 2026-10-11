@@ -5,3 +5,4 @@ catalog:
   zod: ^4.6.5
 allowBuilds:
   esbuild: true
+  unrs-resolver: false

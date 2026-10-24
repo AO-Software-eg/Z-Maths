@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/work/Z-Maths/apps/web/src/app/(landing)/layout.tsx"],"sourcesContent":["    \r\nimport type { ReactNode } from \"react\";\r\nimport \"./globals.css\";\r\nimport Navbar from \"../components/ui/Navbar\";\r\n\r\nexport default function LandingLayout({\r\n  children,\r\n}: Readonly<{ children: ReactNode }>) {\r\n  return <>\r\n  {children}</>;\r\n}\r\n    "],"names":["LandingLayout","children"],"mappings":";;;;;;;;;;;;AAKe,SAASA,cAAc,EACpCC,QAAQ,EAC0B;IAClC,qBAAO;kBACNA;;;;;;AACH"}}]
+}

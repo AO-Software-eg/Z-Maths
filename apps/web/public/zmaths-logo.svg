@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Zmaths logo</title>
+  <desc id="desc">A bold geometric Z monogram inside a square frame, with MATHS underneath.</desc>
+  <rect width="1024" height="1024" fill="#000000"/>
+  <g fill="#FFFFFF">
+    <!-- Square frame -->
+    <path fill-rule="evenodd" d="M315 275H709V669H315Z M352 312V632H672V312Z"/>
+    <!-- Angular, broken Z mark clipped to the inside of the frame -->
+    <clipPath id="inside-frame"><rect x="352" y="312" width="320" height="320"/></clipPath>
+    <g clip-path="url(#inside-frame)">
+      <path d="M334 506 471 369 511 409 374 546Z"/>
+      <path d="M487 548 665 370 705 410 527 588Z"/>
+    </g>
+  </g>
+  <text x="512" y="744" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="500" letter-spacing="23" text-anchor="middle">MATHS</text>
+</svg>

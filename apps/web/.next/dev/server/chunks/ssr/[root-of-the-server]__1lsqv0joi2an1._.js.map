@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/work/Z-Maths/apps/web/src/app/page.tsx"],"sourcesContent":["import { redirect } from 'next/navigation'\n\nexport default function Home() {\n  return (\n    redirect('/Landing')\n  );\n}\n"],"names":["Home"],"mappings":";;;;AAAA;AAAA;;AAEe,SAASA;IACtB,OACE,IAAA,gTAAQ,EAAC;AAEb"}}]
+}

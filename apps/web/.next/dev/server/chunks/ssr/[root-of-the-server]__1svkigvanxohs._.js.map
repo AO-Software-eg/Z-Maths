@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/work/Z-Maths/apps/web/src/app/(landing)/page.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function LandingPage() {\r\n  return (\r\n    <main>\r\n\r\n    </main>\r\n  );\r\n}\r\n\r\n \r\n"],"names":["LandingPage"],"mappings":";;;;;;AAEe,SAASA;IACtB,qBACE,6VAAC;;;;;AAIL"}}]
+}

@@ -6,8 +6,8 @@ import { PrimaryBtn, SecondaryBtn } from './LandBtn';
 
 function Navbar() {
   return (
-    <header className="fixed top-0 z-50 w-full backdrop-blur-xl shadow-sm text-foreground px-20">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-8 sm:py-4 lg:px-12">
+    <header className="fixed top-0 z-50 w-full backdrop-blur-xl shadow-sm text-foreground lg:px-20 px-10">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-10 px- py-3 sm:px-8 sm:py-4 lg:px-12">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
             src="/zmaths-icon.svg"
@@ -24,14 +24,15 @@ function Navbar() {
             txt="Login"
             href="/login"
             comp={
-              <LogIn className="h-4 w-4 transition-all duration-200 group-hover:translate-x-0.5 group-hover:scale-110" />
+              <LogIn className="h-5 w-5 shrink-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:scale-110 sm:h-4 sm:w-4" />
             }
           />
+
           <SecondaryBtn
             txt="Sign Up"
             href="/signup"
             comp={
-              <UserPlus className="h-4 w-4 transition-all duration-200 group-hover:-rotate-6 group-hover:translate-x-0.5 group-hover:scale-110" />
+              <UserPlus className="h-5 w-5 shrink-0 transition-all duration-200 group-hover:-rotate-6 group-hover:translate-x-0.5 group-hover:scale-110 sm:h-4 sm:w-4" />
             }
           />
         </div>

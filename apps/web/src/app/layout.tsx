@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
+import { Ubuntu } from 'next/font/google'
 
+export const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-ubuntu',
+  display: 'swap',
+})
 export const metadata: Metadata = {
   title: "Z-Maths",
   description: "welcome to z-maths, a place where you can learn and practice mathematics.",
@@ -15,8 +17,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-background text-foreground">{children}</body>
+    <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
+      
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

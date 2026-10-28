@@ -4,7 +4,7 @@ import Link from 'next/link';
 type BtnProps = { txt: string; href: string; comp?: React.ReactNode };
 
 const base =
-  'pointerB group cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-3xl font-semibold transition-all duration-300 hover:opacity-90 ' +
+  'pointerB group  cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-3xl font-semibold transition-all duration-300 hover:opacity-90 ' +
   'px-3.5 py-1.5 text-sm sm:px-5 sm:py-2 ';
 
 const Icon = ({ comp }: { comp?: React.ReactNode }) =>

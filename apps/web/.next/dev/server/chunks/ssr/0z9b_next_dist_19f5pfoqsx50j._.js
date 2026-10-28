@@ -1806,16 +1806,13 @@ Object.defineProperty(exports, "instrumentModuleGetter", {
     }
 });
 function instrumentModuleGetter(getter) {
-    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    if ("TURBOPACK compile-time truthy", 1) {
+        // The tracking is only consumed when prerendering with Cache Components,
+        // which is not supported in the edge runtime (and the tracking relies on
+        // Node.js APIs).
+        return getter;
+    } else //TURBOPACK unreachable
     ;
-    else {
-        return ()=>{
-            const { trackPendingImport } = __turbopack_context__.r("[externals]/next/dist/server/app-render/module-loading/track-module-loading.external.js [external] (next/dist/server/app-render/module-loading/track-module-loading.external.js, cjs)");
-            const exportsOrPromise = getter();
-            trackPendingImport(exportsOrPromise);
-            return exportsOrPromise;
-        };
-    }
 }
 }),
 ]})(),

@@ -15,7 +15,7 @@ Object.defineProperty(exports, "useRouterBFCache", {
 });
 const _react = __turbopack_context__.r("[project]/node_modules/.pnpm/next@16.4.0_@babel+core@7.2_775e0d7ab00b10f2950287173e7bc793/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 // When the flag is disabled, only track the currently active tree
-const MAX_BF_CACHE_ENTRIES = ("TURBOPACK compile-time truthy", 1) ? 3 : "TURBOPACK unreachable";
+const MAX_BF_CACHE_ENTRIES = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 1;
 function useRouterBFCache(activeTree, activeRenderTree, activeStateKey) {
     // The currently active entry. The entries form a linked list, sorted in
     // order of most recently active. This allows us to reuse parts of the list
@@ -689,9 +689,8 @@ function OuterLayoutRouter({ parallelRouterKey, error, errorStyles, errorScripts
         (0, _react.use)(_unresolvedthenable.unresolvedThenable);
     }
     let maybeValidationBoundaryId = null;
-    if (typeof window === 'undefined' && ("TURBOPACK compile-time value", true)) {
-        maybeValidationBoundaryId = (0, _react.use)(_boundary.InstantValidationBoundaryContext);
-    }
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
     const activeSegment = activeTree[0];
     const activeStateKey = (0, _createsegmentkey.createSegmentKey)(activeSegment);
     // At each level of the route tree, not only do we render the currently
@@ -803,12 +802,8 @@ function OuterLayoutRouter({ parallelRouterKey, error, errorStyles, errorScripts
                 segmentViewStateNode
             ]
         });
-        if (typeof window === 'undefined' && ("TURBOPACK compile-time value", true) && typeof maybeValidationBoundaryId === 'string') {
-            templateValue = /*#__PURE__*/ (0, _jsxruntime.jsx)(_boundary.RenderValidationBoundaryAtThisLevel, {
-                id: maybeValidationBoundaryId,
-                children: templateValue
-            });
-        }
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
         let child = /*#__PURE__*/ (0, _jsxruntime.jsxs)(_approutercontextsharedruntime.TemplateContext.Provider, {
             value: templateValue,
             children: [
@@ -826,13 +821,8 @@ function OuterLayoutRouter({ parallelRouterKey, error, errorStyles, errorScripts
                 ]
             }, stateKey);
         }
-        if ("TURBOPACK compile-time truthy", 1) {
-            child = /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.Activity, {
-                name: debugNameToDisplay,
-                mode: stateKey === activeStateKey ? 'visible' : 'hidden',
-                children: child
-            }, stateKey);
-        }
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
         children.push(child);
         bfcacheEntry = bfcacheEntry.next;
     }while (bfcacheEntry !== null)
